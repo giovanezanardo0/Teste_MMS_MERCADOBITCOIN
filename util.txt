@@ -1,0 +1,38 @@
+Comando para liberar ambiente virtual no powersheel admin:
+
+1 - Abra o PowerShell como administrador e digite o comando abaixo
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+2 - responder: S
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Comando para criar ambiente virtual:
+
+1 - Digite o comando abaixo, e no final do código defina o nome da ambiente de acordo com a necessidade
+
+python -m venv venv
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Comando para abrir o ambiente virtual
+
+1 - no diretorio que esta a pasta env digite o comando abaixo
+
+.\venv\Scripts\Activate
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Comando para instalar conteudo do requirements:
+
+1 - Abra o projeto e navegue até o diretorio com o arquivo requirements
+
+2 - execute o comando abaixo:
+
+pip install -r requirements.txt
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Comando para iniciar servidor FastAPI
+
+uvicorn main:app --reload
